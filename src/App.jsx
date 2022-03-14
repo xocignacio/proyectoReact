@@ -14,7 +14,7 @@ function App() {
   
     <NavBar />
     <Main Bienvenida='Bienvenidos a BeerScript'/>
-    <ItemCount stock="5" initial="1" />
+    <ItemCount stock= {5} initial= {1} />
     
     </>
     

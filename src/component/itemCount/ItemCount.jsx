@@ -2,29 +2,31 @@ import {useState} from 'react'
 import { Card } from 'react-bootstrap'
 import './itemCount.css'
 
-function ItemCount({stock, initial}) {
-  const [count,setCount] = useState (1)
+function ItemCount({stock, initial, onAdd}) {
+  const [count,setCount] = useState (initial)
 
   const suma = () => {
-      setCount (count +1)
+    
+      if (count < stock) {
+        setCount (count + 1)
+      }
   }     
 
   const resta = () => {
-      setCount (count -1)
+    
+    if (count > initial) {
+      setCount( count - 1 )
+
+      }
   }
 
-  const onAdd = () => {
-    if (count <= 5) {
-      alert ("se agrego" + " " + count + " IPA a su carrito")
-      
-    } else {
-      alert ('No hay stock')
-    }
-         
-  }
+  const agregar = () => {
+    alert ('Se agrego con exito ' + count + ' ipa ' + 'a su carrito' )
+    
+}
 
     return (
-      <div>
+      <div className='card'>
         <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="../multimedia/descarga.jpg"/>
       <Card.Body>
@@ -36,7 +38,7 @@ function ItemCount({stock, initial}) {
      <button className='btn' onClick={resta}> - </button>
      <label className='label'> {count} </label>
      <button className='btn' onClick={suma}> + </button>
-     <button className='btn' onClick={onAdd}> Agregar</button>
+     <button className='btn' onClick={agregar}> Agregar</button>
     </Card.Body>
     </Card>
       </div>
@@ -45,4 +47,7 @@ function ItemCount({stock, initial}) {
 }
 
 export default ItemCount
+ 
+
+
 
