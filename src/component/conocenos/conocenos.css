@@ -1,0 +1,10 @@
+.conocenos {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;  
+    color: whitesmoke;
+    height: 700px;                   
+    background-image:url(../multimedia/bar-g4fbb1c70c_1920.jpg);
+    padding: 15px;  
+}

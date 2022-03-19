@@ -22,9 +22,9 @@ function ItemListContiner() {
         <>      
         {  loading ? <div class="glitch" data-text="Cargando...">Cargando...</div>  //// el loading esta en true y me muestra cargando, termina y dispara el useEffect, (linea 14) me trae los productos y se ejecuta el loading en falso  (linea 16) y cambia el estado.
 
-         :   <div>   
-              <h2> Lista de cervezas </h2>
-              <ItemList prods={prods} />                  {/* ItemList tengo el mapeo y en item tengo la card  */}
+         :   <div className="fondito">   
+              <h2> Nuestros productos </h2>
+              <ItemList prods={prods} />                                            {/* ItemList tengo el mapeo y en item tengo la card  */}
             </div>
             
         }              

@@ -1,0 +1,38 @@
+.carrito {
+    color:rgb(122, 122, 7);
+    font-size: 25px;
+     font-family: 'Graduate', cursive;
+    
+}
+
+.lista {
+    color: white;
+   font-size: 20px;
+   margin: 15px;
+}
+
+.container {
+    color: white;
+}
+
+.home {
+    color: rgb(122, 122, 7);
+    font-size: 30px;
+    margin: 15px;
+   
+    font-family: 'Monoton', cursive;
+}
+
+.conocer {
+    color: white;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.cont {
+    color: white;
+    font-size: 20px;
+    margin: 15px;
+   
+   
+}

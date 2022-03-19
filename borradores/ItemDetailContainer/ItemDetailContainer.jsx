@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import ItemDetail from "../../component/ItemDetail/ItemDetail"
+import ItemDetail from "../ItemDetail/ItemDetail"
 
-import { getFetch } from "../../helpers/getFetch"
+import { getFetch } from "../../src/helpers/getFetch"
 
 function ItemDetailContainer() {
     const [producto, setProducto] = useState({})

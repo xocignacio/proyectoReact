@@ -1,0 +1,11 @@
+.homeBienvenida {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;  
+    color: whitesmoke;
+    height: 700px;                   
+    background-image:url(../multimedia/birritas.jpg);
+    padding: 15px;  
+}
+

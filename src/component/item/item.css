@@ -1,0 +1,36 @@
+.card-header {
+    font-size: 25px;
+    text-align: center;
+    background-color: black;
+    
+}
+
+.card {
+    
+    display: inline;
+
+    
+}
+
+.card:hover {
+    box-shadow: 5px 10px 20px 10px rgba(250, 247, 247, 0.27);
+    transition: all 0.3s linear;
+   
+}
+
+.card-body {
+    background: white ; 
+    text-align: center;
+    font-size: 40px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.price {
+    color: rgb(122, 122, 7);
+    text-align: center;
+    font-size: 30px;
+}

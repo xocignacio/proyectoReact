@@ -1,0 +1,22 @@
+.detallesName{
+    color:rgb(122, 122, 7);
+    font-size: 30px;
+    font-family: 'Graduate', cursive;
+    background: linear-gradient(to left,#030303 ,  #221d22);
+    border: 15px solid white;
+}
+
+.detallesCategori{
+    font-family: 'Graduate', cursive;
+    color: black;
+    background-color: white;
+    border: 15px solid white;
+}
+
+.detallesPrice {
+    font-family: 'Graduate', cursive;
+    color: black;
+    background-color: white;
+    border: 15px solid white;
+
+}
