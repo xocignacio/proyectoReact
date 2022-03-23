@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import ItemDetail from "../../component/ItemDetail/ItemDetail"
-import { getFetch} from "../../helpers/getFetch"
+import { getFetch, productos} from "../../helpers/getFetch"
 
 
 
@@ -9,6 +9,17 @@ function ItemDetailContianer() {
     const [producto, setProducto] = useState({})
     const [ loading, setLoading ] = useState(true)  
     const { detalleId } = useParams() 
+    const getFetch = new Promise((resolve, reject)=>{
+    
+        let condition = true
+        if (condition) {
+            setTimeout(() => {
+                resolve(productos)                    
+            }, 2000);
+        } else {
+            reject('400 - not found')        
+        }
+    })
     
     useEffect(()=>{
         getFetch

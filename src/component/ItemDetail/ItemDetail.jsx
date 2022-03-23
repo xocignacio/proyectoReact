@@ -1,4 +1,4 @@
-import    './itemDetail.css'
+import    './itemDetail.css'                    //////////////cart de detalles
 function ItemDetail({producto}) {
     return (
       <div className='detalles'>

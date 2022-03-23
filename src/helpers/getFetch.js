@@ -1,4 +1,4 @@
-const productos = [
+export const productos = [
     { id: '1', categoria: 'Artesanal', name: "Ipa", price: '$250'   ,foto:'https://www.cerveza-artesanal.co/wp-content/uploads/2020/08/receta-cerveza-india-pale-ale-clasica.jpg '},
     { id: '2', categoria: 'Artesanal', name: "Red ipa", price: '$250 ',foto:'https://www.cerveza-artesanal.co/wp-content/uploads/2017/09/english-special-strong-bitter-receta-800x600.jpg' },
     { id: '3', categoria: 'Artesanal', name: "Black", price:  '$220'    ,foto:'https://www.cerveza-artesanal.co/wp-content/uploads/2018/04/ipa-negra.jpg' },
@@ -8,7 +8,14 @@ const productos = [
     { id: '7', categoria: 'Industrial', name: "Honey sin alcohol", price: '$200'  ,foto:'https://www.cerveza-artesanal.co/wp-content/uploads/2018/09/100-brett-ipa.jpg'  }
   ]
 
-export const getFetch = new Promise((resolve, reject)=>{
+
+
+
+
+
+
+
+ /* const getFetch = new Promise((resolve, reject)=>{
     
     let condition = true
     if (condition) {
@@ -19,7 +26,7 @@ export const getFetch = new Promise((resolve, reject)=>{
         reject('400 - not found')        
     }
 })
-
+ */
 
 
 

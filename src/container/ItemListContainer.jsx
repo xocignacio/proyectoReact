@@ -1,20 +1,45 @@
 import { useState, useEffect } from "react"
 import ItemList from "../component/itemList/ItemList";
-import { getFetch } from "../helpers/getFetch";
+import { productos } from "../helpers/getFetch";
+import { useParams } from "react-router-dom";
 import    './itemListContainer.css'
 /* import ItemCount from "../component/itemCount/ItemCount"; */
 
 function ItemListContiner() {
     
     const [ loading, setLoading ] = useState(true)  
-    const [prods, setProds ] = useState([])         /// el producto lo guardo y lo hago persistente en un estado. se ejecuta una sola vez (buen rendimiento)
+    const [prods, setProds ] = useState([])  
+    const { id } = useParams()                        /// el producto lo guardo y lo hago persistente en un estado. se ejecuta una sola vez (buen rendimiento)
    
+    
+    
+  
+
     useEffect(()=> {
-            getFetch                              // => importo el getFetch con el array de objetos, la promise con retardo de 3 segundos. Sirve para simular un llamado a api
+        const getFetch = new Promise((resolve, reject)=>{
+    
+            let condition = true
+            if (condition) {
+                setTimeout(() => {
+                    resolve(productos)                    
+                }, 2000);
+            } else {
+                reject('400 - not found')        
+            }
+        })
+        if (id) {
+            getFetch     
+            .then(resp => setProds(resp.filter(prod=> prod.categoria === id)))
+            .catch(err => console.log(err))
+            .finally(()=> setLoading(false))           
+        } else {
+            getFetch      
             .then(resp => setProds(resp))
             .catch(err => console.log(err))
-            .finally(()=> setLoading(false))              
-    }, [])
+            .finally(()=> setLoading(false))            
+        }
+    }, [id])
+
      
 
     console.log(prods)
@@ -33,4 +58,12 @@ function ItemListContiner() {
 }
 
 export default ItemListContiner
+/* 
 
+useEffect(()=> {
+    getFetch                              // => importo el getFetch con el array de objetos, la promise con retardo de 3 segundos. Sirve para simular un llamado a api
+    .then(resp => setProds(resp))
+    .catch(err => console.log(err))
+    .finally(()=> setLoading(false))              
+}, [])
+ */
