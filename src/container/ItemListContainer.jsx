@@ -3,6 +3,7 @@ import ItemList from "../component/itemList/ItemList";
 import { productos } from "../helpers/getFetch";
 import { useParams } from "react-router-dom";
 import    './itemListContainer.css'
+import ItemCount from "../component/itemCount/ItemCount";
 /* import ItemCount from "../component/itemCount/ItemCount"; */
 
 function ItemListContiner() {
@@ -50,6 +51,7 @@ function ItemListContiner() {
          :   <div className="fondito">   
               <h2> Nuestros productos </h2>
               <ItemList prods={prods} />                                            {/* ItemList tengo el mapeo y en item tengo la card  */}
+           
             </div>
             
         }              

@@ -21,16 +21,18 @@ function ItemCount({stock, initial, onAdd}) {
   }
 
   const agregar = () => {
-    alert ('Se agrego con exito ' + count + ' ipa ' + 'a su carrito' )
+     onAdd (count)
     
 }
 
 
     return (
-     <div> <button className='btn' onClick={resta}> - </button>
+     <div className='count'> 
+    <button className='btn' onClick={resta}> - </button>
      <label className='label'> {count} </label>
      <button className='btn' onClick={suma}> + </button>
-     <button className='btn' onClick={agregar}> Agregar</button> </div>
+     <button className='btn' onClick={agregar}> Agregar</button> 
+     </div>
     
    
   )

@@ -10,7 +10,8 @@ import Cart from './component/Cart/Cart';
 import ItemDetailContianer from './container/ItemDetailContainer/ItemDetailContainer';
 import Conocenos from './component/conocenos/conocenos';
 import Home from './component/home/Home';
-import { getFetch } from './helpers/getFetch';
+import CartContextProvider from './component/CartContext';
+
 
 
 
@@ -18,6 +19,7 @@ function App() {
   return (  
    
     <BrowserRouter> 
+    <CartContextProvider>
      <>
     <NavBar />
     
@@ -32,6 +34,7 @@ function App() {
     </Routes>
     
     </>
+    </CartContextProvider>
     </BrowserRouter>
   
     
