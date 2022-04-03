@@ -1,12 +1,21 @@
 import { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import { CartContext } from '../CartContext'
 import Item from '../item/Item'
 import    './cart.css'
 
+
 function Cart() {
 
- const {cartList, vaciarCart, precioTotal } = useContext (CartContext)
+ const {cartList, vaciarCart, precioTotal, borrarItem } = useContext (CartContext) //// cartList array de los productos seleccionados
  
+ function generarOrden (e) {
+   e.preventDefault();
+   let orden = {}
+
+   
+ }
+
     return (
       <div className="cart">
         { cartList.map (prod => 
@@ -18,7 +27,17 @@ function Cart() {
               
        </li>  ) }
      
-      <button className='btn' onClick={vaciarCart} > Vaciar el carrito </button>
+       <li>
+       <button className='btn' onClick={vaciarCart} > Vaciar el carrito </button>
+      <button onClick={ generarOrden}> generando orden </button>
+      <button onClick={ borrarItem}> eliminar </button>
+     
+      <Link to='/'>
+                        <button className='btn btn-outline-primary'> Seguir comprando</button>
+
+       </Link>
+       </li>
+
       </div>
     )
   }

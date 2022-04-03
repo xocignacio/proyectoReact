@@ -9,12 +9,7 @@ export const productos = [
   ]
 
 
-
-
-
-
-
-
+  
  /* const getFetch = new Promise((resolve, reject)=>{
     
     let condition = true
