@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import    './itemListContainer.css'
 import ItemCount from "../component/itemCount/ItemCount";
 /* import ItemCount from "../component/itemCount/ItemCount"; */
+import {collection, doc, getDocs, getFirestore} from 'firebase/firestore'   /////importo libreria de firestore
 
 function ItemListContiner() {
     
@@ -13,9 +14,20 @@ function ItemListContiner() {
     const { id } = useParams()                        /// el producto lo guardo y lo hago persistente en un estado. se ejecuta una sola vez (buen rendimiento)
    
     
+   useEffect (() => {
+       const db =getFirestore () ////inicializa getFirestore con mis apis key
+
+       const queryCollection = collection (db, 'Items')   ////// primer parametro db que es la base de datos que me traigo y segundo paremetro el nombre que le di al array en la pagina firebase coleecion
+       getDocs(queryCollection)
+       .then(resp => setProds( resp.docs.map(producto =>( {id: producto.id, ...producto.data()}) ) ) )
+        .catch(err => console.log(err))
+        .finally(()=> setLoading(false))   
+
+       
+   }, [id])
     
   
-
+/* 
     useEffect(()=> {
         const getFetch = new Promise((resolve, reject)=>{
     
@@ -39,7 +51,7 @@ function ItemListContiner() {
             .catch(err => console.log(err))
             .finally(()=> setLoading(false))            
         }
-    }, [id])
+    }, [id]) */
 
      
 
@@ -48,7 +60,7 @@ function ItemListContiner() {
         <>      
         {  loading ? <div class="glitch" data-text="Cargando...">Cargando...</div>  //// el loading esta en true y me muestra cargando, termina y dispara el useEffect, (linea 14) me trae los productos y se ejecuta el loading en falso  (linea 16) y cambia el estado.
 
-         :   <div className="fondito">   
+         :   <div className="fondito ">   
               <h2> Nuestros productos </h2>
               <ItemList prods={prods} />                                            {/* ItemList tengo el mapeo y en item tengo la card  */}
            
