@@ -1,3 +1,4 @@
+import { Col, Container, Row } from "react-bootstrap"
 import Item from "../item/Item"
 import './itemList.css'
 
@@ -5,9 +6,9 @@ import './itemList.css'
 function ItemList({ prods }) {
     return (
    
-     <>      
-      
-        <div className="fondito">
+     <>   
+              
+        <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
             {prods.map((prod) => <Item prod={prod} /> )}
         </div>
      </> 
@@ -15,3 +16,11 @@ function ItemList({ prods }) {
 }
 
 export default ItemList
+
+
+{/* <Container>
+  <Row>
+    <Col> {prods.map((prod) => <Item prod={prod} /> )}</Col>
+    <Col>2 of 2</Col>
+  </Row>
+  </Container> */}

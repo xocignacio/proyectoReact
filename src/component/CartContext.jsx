@@ -5,7 +5,7 @@ export const CartContext = createContext([])
 
 
 function CartContextProvider({children}) {
-    const [cartList, setCartList] = useState([])
+    const [cartList, setCartList] = useState([])       ///// cartList es el array de los productos que tengo en el carrito
    
     function  addToCart (items) {
       

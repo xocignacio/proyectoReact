@@ -6,13 +6,15 @@ function Item({prod}) {
         <Link to={`detalle/${prod.id}`}>
            
             <div
-                 key={prod.id} className='col-md-3  container d-flex justify-content-center align-items-center h-100' >                        
+                 key={prod.id} className='row container d-flex justify-content-center align-items-center h-100' >                        
                     <div className="card w-100 mt-5" >
                       <div className="card-header">
                         {`${prod.name} - ${prod.categoria}`}
                       </div>
+                   
                     <div className="card-body">
-                        <img src={prod.foto} alt='' className='w-50' />
+                       
+                        {/* <img src= {prod.foto}  alt='' className='w-50' /> */}
                                                                                   
                     </div>
                    

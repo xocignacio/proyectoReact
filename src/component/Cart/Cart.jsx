@@ -9,12 +9,23 @@ function Cart() {
 
  const {cartList, vaciarCart, precioTotal, borrarItem } = useContext (CartContext) //// cartList array de los productos seleccionados
  
- function generarOrden (e) {
-   e.preventDefault();
-   let orden = {}
+      const generarOrden = (e) => {
+        e.preventDefault();
+        let orden = {}
 
-   
- }
+        orden.buyer = {name: 'ignacio' , email: 'xose_ignacio@hotmail.com' , phone: '1234566789'}
+        orden.total = precioTotal ()
+
+        orden.Item = cartList.map (cartItem => {
+            const id = cartItem.id 
+            const nombre = cartItem.name 
+            const precio = cartItem.price * cartItem.cantidad
+
+            return { id, nombre, precio}
+        })
+          console.log (orden)
+        
+      }
 
     return (
       <div className="cart">
