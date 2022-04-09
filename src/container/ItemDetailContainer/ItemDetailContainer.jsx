@@ -8,14 +8,14 @@ import { getFetch, productos} from "../../helpers/getFetch"
 
 function ItemDetailContianer() {
     const [producto, setProducto] = useState({})
-    const {idDetalle} = useParams()
+    const {detalleId} = useParams()
     
     useEffect(()=>{
         const db = getFirestore()
-        const queryProd = doc(db, 'tems', idDetalle)
+        const queryProd = doc(db, 'Items', detalleId)
         getDocs(queryProd)
         .then(resp => setProducto( {id: resp.id, ...resp.data()} ))
-    }, [])
+    }, [detalleId])
 
 
 
