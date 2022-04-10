@@ -7,17 +7,22 @@ import { getFetch, productos} from "../../helpers/getFetch"
 
 
 function ItemDetailContianer() {
+    const [ loading, setLoading ] = useState(true)  
     const [producto, setProducto] = useState({})
     const {detalleId} = useParams()
     
+    
     useEffect(()=>{
         const db = getFirestore()
-        const queryProd = doc(db, 'Items', detalleId)
+        const queryProd = doc(db, 'Items', 'detalleId')
         getDocs(queryProd)
         .then(resp => setProducto( {id: resp.id, ...resp.data()} ))
-    }, [detalleId])
+        .catch(err => console.log(err))
+        .finally(()=> setLoading(false))   
 
+    }, [])
 
+  console.log (setProducto)
 
   /* 
     const getFetch = new Promise((resolve, reject)=>{
@@ -45,10 +50,13 @@ function ItemDetailContianer() {
 
     return (
         <>
+        {  loading ? <div class="glitch" data-text="Cargando...">Cargando...</div>  //// el loading esta en true y me muestra cargando, termina y dispara el useEffect, (linea 14) me trae los productos y se ejecuta el loading en falso  (linea 16) y cambia el estado.
+      
+      : 
         <div>
             <ItemDetail producto={producto} />      
         </div>
-    
+    }
         </>
     )
 }
