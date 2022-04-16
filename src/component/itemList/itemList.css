@@ -1,5 +1,19 @@
 .fondito {
-   background-color: rgb(253, 253, 253);
-    
+  background-image: url(../multimedia/hand-painted-watercolor-background-with-sky-and-clouds-shape.jpg);
+  background-color: white;
    
 }
+ 
+/* .baner {
+  background-color: white;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   text-align: center;  
+   color: whitesmoke;
+   height: 500px;     
+   padding: 15px;     
+  
+  
+   border: 2PX solid grey;
+} */

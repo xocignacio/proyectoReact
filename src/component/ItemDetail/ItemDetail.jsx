@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { CartContext } from '../CartContext'
 import ItemCount from '../itemCount/ItemCount'
 import    './itemDetail.css'       //////////////cart de detalles
@@ -7,6 +7,8 @@ import    './itemDetail.css'       //////////////cart de detalles
 function ItemDetail({producto}) {
 const [isCant, setIsCant] = useState (false)  
 const {addToCart} = useContext (CartContext) 
+const {detalleId} = useParams()
+console.log (detalleId)
 
 const onAdd = (cantidad) => {
  console.log (cantidad)

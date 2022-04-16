@@ -11,6 +11,7 @@ import ItemDetailContianer from './container/ItemDetailContainer/ItemDetailConta
 import Conocenos from './component/conocenos/conocenos';
 import Home from './component/home/Home';
 import CartContextProvider from './component/CartContext';
+import Footer from './component/footer/Footer';
 
 
 
@@ -21,22 +22,22 @@ function App() {
     <BrowserRouter> 
     <CartContextProvider>
      <>
-    <NavBar />
-    
+    <NavBar />    
     <Routes> 
     <Route path='/' element={<ItemListContiner />} />
-    <Route path='/detalle/:idDetalle' element={< ItemDetailContianer />} />
+    <Route path='/detalle/:detalleId' element={< ItemDetailContianer />} />
     <Route path='/cart' element={ <Cart />}/>
     <Route path='/conocenos' element={ <Conocenos />}/>
     <Route path="/*" element={<Navigate to= "/" />} />
-    <Route path='/Home' element={ <Home />}/>    
-   
-    </Routes>
+    <Route path='/Home' element={ <Home />}/>        
     
+    </Routes>
+    <Footer/> 
     </>
+   
     </CartContextProvider>
     </BrowserRouter>
-  
+     
     
   );
 }

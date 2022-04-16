@@ -13,7 +13,7 @@ function ItemList({ prods }) {
         </div>
      </> 
     )
-}
+} 
 
 export default ItemList
 
