@@ -1,17 +1,21 @@
-/* From cssbuttons.io by @adamgiebl */
+
+
 button {
-    background: linear-gradient(-45deg,#1f3ea3, #9f69fe, #27c8b7, #1f3ea3);
+   /*  background: linear-gradient(-45deg,rgb(50, 49, 49), black,#634a00, #efb810); */
     background-size: 800% 400%;
     padding: 1em 2em;
     display: inline-block;
-    border: none;
+    box-shadow: 0 2px 20px grey;
+    border-radius: 0.2rem ;
     border-radius: 10px;
     font-size: 17px;
     font-weight: 700;
-    color: white;
+    color: black;
     transition: all .5s ease-in-out;
     animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
-    color: white;
+    background-color: white;
+    
+  
    }
    
    button:hover {
@@ -39,18 +43,68 @@ button {
    }
 
 .btn {
-    color: white;
-    font-size: 25px;
-    margin: 15px;
+    color: black;
+    font-size: 20px;
+    margin: 1px;    
     font-family: 'Graduate', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+.count {
+font-family: Montserrat, sans-serif;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+height: 100vh;
+}
+
+ */
+
+
+.numero {
+    color: black;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-wrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    
+}
+
+.btnCuentas {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Graduate', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30%;
+    border: none;
+    height: 3rem !important;
+    width: 3rem !important;
+    margin: 25px;
 }
 
 
+/* .label {
+    color: black;
+    font-size: 25px;
+} */
 
-
-
-
-
+.cuadrado {
+    border: 1px solid red;
+}
 
 
 

@@ -1,11 +1,32 @@
 .homeBienvenida {
+    display: flex;
+    padding: 80px;
+    color: whitesmoke;
+    height: 800px;                   
+    background-color: white;
+    
+    
+    font-size: 20px;
+}
+
+.carrusel {
+    height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    text-align: center;  
-    color: whitesmoke;
-    height: 900px;                   
-    background-image:url(../multimedia/birritas.jpg);
-    padding: 15px;  
+    
 }
 
+.texto-carrusel {
+    color: white;
+    font-size: 35px;
+}
+
+a{
+    color: white;
+}
+
+.historiaCerveza {
+    color: grey;
+    
+}

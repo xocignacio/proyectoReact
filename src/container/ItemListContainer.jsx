@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import    './itemListContainer.css'
 import ItemCount from "../component/itemCount/ItemCount";
 /* import ItemCount from "../component/itemCount/ItemCount"; */
+import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import {collection, doc, getDocs, getFirestore} from 'firebase/firestore'   /////importo libreria de firestore
 
 function ItemListContiner() {
@@ -65,6 +66,7 @@ function ItemListContiner() {
         {/*  <div className="baner"> <h2>  </h2> </div> */}
            <div className="fondito ">   
               <h2> Conoce nuestros productos </h2>
+              <h3 className="textoCerveza" > <IoCheckmarkCircleOutline /> Cerveza artesanal de calidad</h3>
               <ItemList prods={prods} />                                            {/* ItemList tengo el mapeo y en item tengo la card  */}
            
             </div>

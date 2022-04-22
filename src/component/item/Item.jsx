@@ -7,16 +7,17 @@ function Item({prod}) {
       <Link to={`detalle/${prod.id}`}> 
    
 <div  key={prod.id}  > 
-<Card  style={{ width: '18rem' }}>
+<Card className="cardCuerpo" style={{ width: '25rem' }} >
 <Card.Img  className="image" variant="top" src= {prod.foto}  />
 <Card.Body>
- <Card.Title className="title"> {`${prod.name} - ${prod.categoria}`} </Card.Title>
+ <Card.Title className="titleList"> {`${prod.name} - ${prod.categoria}`} </Card.Title>
  <Card.Title className="price">  {prod.price} </Card.Title>
  <Card.Text className="text">
  {prod.descripcion} 
    
  </Card.Text>
- <Button variant="primary"> Ir a detalles </Button>
+ <center>  <button className="btn-detalle" > Ir a detalles </button> </center>
+
 </Card.Body>
 </Card>
 </div>

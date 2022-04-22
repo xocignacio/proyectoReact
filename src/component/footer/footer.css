@@ -1,10 +1,14 @@
 .footer {
   
-    height: 10rem;
+    height: auto;
     width: 100%;
-    color: #99CCFF;
-    background-color: white;
-    border-top: 2px solid #99CCFF;
+    color: #010203;
+    /* background: linear-gradient(to left, #000000, #434343); */
+    background: #DCDCDC;
+    
+    box-shadow: 0 2px 20px grey;
+    border-radius: 0.2rem ;
+   
 }
 
 .derechos {
@@ -16,14 +20,14 @@
 }
 
 .redes {
-  color: skyblue;
+  color: #010203;
   text-align: center;
 }
 
 
 .linkedin {
   font-size: 30px;
-  color: #99CCFF;
+  color: #efb810;
   display: flex;
   align-items: center;
   
@@ -56,7 +60,8 @@ ul li a:hover {
 }
 
 ul li .linkedin:hover {
-  background:white;
+  background:black;
+  color: #efb810;
 }
 
 .encontrame {
@@ -72,14 +77,13 @@ ul li .linkedin:hover {
 }
 
 .info {
-  color:  #99CCFF;
-  
+  color:  #010203;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 15px; 
   text-align: center;
-  border: none;
+  border: none !important;
   margin: 15px;
    
 }
@@ -98,13 +102,11 @@ ul li .linkedin:hover {
 }
 
 .home2 {
-  color:  #99CCFF;
-  padding: 2px;
-  display: flex;
-  
+   padding: 2px;
+  display: flex;  
   border: none;
   margin: 15px;
-  color: #99CCFF;
+  color: #010203;
   font-size: 30px;
   align-items: center;
   justify-content: center;

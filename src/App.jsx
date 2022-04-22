@@ -12,6 +12,7 @@ import Conocenos from './component/conocenos/conocenos';
 import Home from './component/home/Home';
 import CartContextProvider from './component/CartContext';
 import Footer from './component/footer/Footer';
+import Contacto from './component/contacto/Contacto';
 
 
 
@@ -29,7 +30,8 @@ function App() {
     <Route path='/cart' element={ <Cart />}/>
     <Route path='/conocenos' element={ <Conocenos />}/>
     <Route path="/*" element={<Navigate to= "/" />} />
-    <Route path='/Home' element={ <Home />}/>        
+    <Route path='/Home' element={ <Home />}/>      
+    <Route path='/contacto' element={ <Contacto />}/>       
     
     </Routes>
     <Footer/> 

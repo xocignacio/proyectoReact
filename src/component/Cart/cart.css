@@ -4,7 +4,108 @@
     background-position: center;
     text-align: center;  
     color: whitesmoke;
-    height: 900px;                   
-    background-image:url(../multimedia/shopping-venture-ga2d53c8d1_1920.jpg);
+    height: auto;                   
+    background-color: #FFFDFA;
     padding: 15px;  
+    border: none !important;
+}
+
+.badge {
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    margin-left: 10px;
+    font-size: 8px;
+    margin-top: -12px;
+    background-color: transparent !important;   
+    border: none !important;   
+}
+
+.boton-cart {
+    background: none;
+    color: grey;
+    box-shadow: none;
+    border: none;
+    font-family: 'Nunito Sans',sans-serif;   
+    
+}
+
+.cantidadDelCarro {
+    color: #efb810;
+}
+
+.changuito {
+    color: gray;
+}
+
+.boton-cart:hover {
+    color: grey;
+    background-color: white;
+    box-shadow: 0 2px 10px grey;
+    border-radius: 0.3rem ;   
+  }
+
+.containerPapi {
+    background-color: white;  
+    
+    align-items: center;
+    justify-content: center;
+    height:900px;
+}
+
+.containerHijo {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+
+.col1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;   
+}
+
+.imagenCart {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.rowRow {
+    border-bottom: 2px solid grey;  
+    padding: 1px;
+    margin: 45px;    
+
+}
+
+.titleTitle {
+    color: black;
+    font-size: 30px;
+}
+
+.Row-botoncitos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colBotones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px;
 }

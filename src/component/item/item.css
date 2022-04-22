@@ -10,12 +10,6 @@ a {
     text-decoration: none;
 }
 
-.caja {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
-    gap: 10rem;
-    justify-content: center;
-}
 
 .card {
     overflow: hidden;
@@ -26,13 +20,14 @@ a {
     justify-content: space-between;
     cursor: pointer;
     transition: transform 200ms ease-in;
-    margin: 80px;
+    margin: 80px;    
     
 }
 
 
+
 .image {
-    height: 12rem;
+    height: 22rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -41,28 +36,56 @@ a {
 }
 
 .title {
-    color: black;
+    
     padding: 1rem ;
     text-align: center;
+    
+    color: red;
 }
 
 .price {
     padding: 1rem;
     text-align: center;
     color: black;
+    border-bottom: 1px solid grey;
+    padding: 14px;
 }
 
 .text {
     padding: 0 1rem;
-    color: skyblue;
+    color: #efb810;
     height: 8rem;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
 }
 
 
 
+.card:hover {
+    box-shadow: 5px 10px 20px 10px rgba(250, 247, 247, 0.27);
+    transition: all 0.3s linear;
+}
 
+.titleList {
+    display: flex;
+    text-align: center;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+    padding: 14px;
+}
 
+.btn-detalle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18px;
+    font-family: 'Graduate', cursive;
+}
 
 
 /* .card-header {
@@ -81,11 +104,6 @@ a {
     
 } 
 
-.card:hover {
-    box-shadow: 5px 10px 20px 10px rgba(250, 247, 247, 0.27);
-    transition: all 0.3s linear;
-   
-}
 
 .card-body {
     background: white ; 

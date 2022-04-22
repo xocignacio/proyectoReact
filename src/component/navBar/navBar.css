@@ -1,14 +1,13 @@
-.carrito {
-    color:#99CCFF;
-    font-size: 25px;
-    font-family: 'Graduate', cursive;
-    
-}
-
+a:hover {
+    color: #efb810;
+  }
 .lista {
-    color: #1e41b3 ;
-   font-size: 20px;
+    color: grey;
+   font-size: 17px;
    margin: 15px;
+   font-family: 'Nunito Sans',sans-serif;
+   border-right: 2px solid rgb(238, 229, 229);
+   padding: 5px;
 }
 
 .container {
@@ -17,33 +16,52 @@
 
 .home {
     display: flex;
-    color: #99CCFF;
-    font-size: 30px;
-    margin: 15px;
-    align-items: center;
-    justify-content: flex-end;
-    font-family: 'Monoton', cursive;
+    color: black;   
+    margin: 15px; 
+   
+    margin-right: 520px;
+    margin-left: 0px;
 }
 
 .conocer {
-    color: #1e41b3;
-    font-size: 20px;
+    color: grey;
+    font-size: 17px;
     margin: 15px;
+    font-family: 'Nunito Sans',sans-serif;
+    border-right: 2px solid rgb(238, 229, 229);
+    padding: 5px;
+    
 }
 
 .cont {
-    color: #1e41b3;
-    font-size: 20px;
+    color: grey;
+    font-size: 17px;
     margin: 15px;   
-   
+    font-family: 'Nunito Sans',sans-serif;
+    border-right: 2px solid rgb(238, 229, 229);
+    padding: 6px;
 }
 
 
 .superNav {
-    background: linear-gradient(to right,white , rgb(237, 233, 233)) ; 
+     background-color: #FFFDFA;
+height: auto;
+width: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-bottom: 1px solid rgb(214, 205, 205) ;
-   
+    
+    box-shadow: 0 2px 20px grey;
+    border-radius: 0.2rem ;   
 }
+
+.birrita {
+    font-size: 22px;
+    color: #efb810;
+   
+  
+   
+   
+    
+}
+

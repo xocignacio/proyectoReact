@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import './footer.css'
 import { FaLinkedin, FaBeer } from "react-icons/fa"
 import { NavLink } from "react-router-dom"
+import ReactLogo from '../navBar/ReactLogo'
 
 function Footer() { 
    return (   
@@ -17,7 +18,7 @@ function Footer() {
          </Col>
         
         <Col> 
-           <NavLink to="home" className={"home2"}>BeerScript</NavLink>
+           <NavLink to="home" className={"home2"}> <ReactLogo /> </NavLink>
         </Col>
         <Col className='redes'>          
            <ul>

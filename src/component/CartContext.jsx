@@ -1,7 +1,7 @@
-import { createContext, useState } from "react"
+import { createContext, useContext, useState } from "react"
 
 export const CartContext = createContext([])
-
+export const useCartContext = () => useContext(CartContext)  /// segunda forma de exportar un context
 
 
 function CartContextProvider({children}) {
@@ -34,21 +34,26 @@ function CartContextProvider({children}) {
   
 
 const precioTotal =() =>{
- return cartList.reduce((acum, prod) => acum + (prod.cantidad * prod.precio) , 0) /////
+ return cartList.reduce((acum, prod) => acum + (prod.cantidad * prod.precio) , 0) 
 }
 
 const borrarItem = (id) => {
-  setCartList( cartList.filter(prod => prod.id !== id) )
+   setCartList( cartList.filter(prod => prod.id !== id) )
 }
 
+const cantidadTotalItem = () => {
+  return cartList.reduce((acum, prod) => acum += prod.cantidad , 0) 
+}
     
     return (
   <CartContext.Provider value={{
       cartList,
+      setCartList,
       addToCart,
       vaciarCart,
       precioTotal,
-      borrarItem
+      borrarItem,
+      cantidadTotalItem
  
   }}>
     {children}

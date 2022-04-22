@@ -1,27 +1,25 @@
-.conocenos {
+.contacto {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;  
     color: whitesmoke;
-              
-    background-image:url(../multimedia/craft-beer-g22d59403c_1920.jpg);
+    height: 800px;
+    background-image:url(../multimedia/correo.jpg);
     padding: 15px;  
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 
-.texto-conocenos {
-    color: white;
-    margin: 15px;
-    padding: 10px;
-    
-}
-
-.col-conocenos {
+.correo {
+    border: 5px solid red;
     display: flex;
     align-items: center;
-    
+    justify-content: flex-end;
+    width: 800px;
+    height: 300px;
+    margin: 20px;
+    padding: 50px;
 }
 

@@ -1,11 +1,19 @@
 h2 {
     text-align: center;
-    color: skyblue;
+    color: #efb810;
     font-size: 50px;
-    font-family: 'Graduate', cursive;
-  
-     
+    font-family: 'Signika Negative', sans-serif;
+    padding-top: 35px;     
     
+}
+
+.textoCerveza {
+  text-align: center;
+  color: grey;
+  font-size: 25px;
+  font-family: 'Signika Negative', sans-serif;
+ 
+  
 }
 
 
