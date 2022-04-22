@@ -24,7 +24,7 @@ And of course Dillinger itself is open source with a [public repository][dill]
  on GitHub.
 
 
-## Installation
+## Instalacion
 
 Primero necesitamos tener instalado [Node.js](https://nodejs.org/) para instalar y gestionar dependencias
 
