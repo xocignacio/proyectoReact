@@ -3,7 +3,7 @@
 
 
 
-BeerScript es mi SPA realizado en ReactJs basado en un eccomerce de 8 diferentes tipos de cerveza artesanal
+BeerScript es mi primer SPA realizada en ReactJs basado en un eccomerce de 8 diferentes tipos de cerveza artesanal
 
 - Utiliza firebase
 -   Maquetado responsive con React Bootstrap
