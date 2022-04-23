@@ -17,11 +17,8 @@ BeerScript es mi SPA realizado en ReactJs basado en un eccomerce de 8 diferentes
 - Cada uno esta estilado por separado con css
 - Pensados para generar una interfaz intuitiva, limpia y simple
 
-En BeerScript es un proyecto al cual le dedique muchas horas, cari'o y dedicaion.
+En BeerScript es un proyecto al cual le dedique muchas horas, cariño y dedicacion.
 
-
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
 
 
 ## Instalacion
