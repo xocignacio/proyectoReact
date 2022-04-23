@@ -5,10 +5,10 @@
 
 BeerScript es mi primer SPA realizada en ReactJs basado en un ecommerce de 8 diferentes tipos de cerveza artesanal
 
-- Utiliza firebase
+- Utiliza hooks
 -   Maquetado responsive con React Bootstrap
 -   Se aplicaron varios metodos de rendering
-- ✨Implementacion de        hooks✨
+- ✨Utiliza fireBase✨
 ## Componentes
 
 - La interfaz de usuario esta separada por diferentes componentes para ser reutilizables, de facil mantenimiento y con potencial de escalabilidad 
