@@ -17,8 +17,7 @@ a:hover {
 .home {
     display: flex;
     color: black;   
-    margin: 15px; 
-   
+    margin: 15px;    
     margin-right: 520px;
     margin-left: 0px;
 }
@@ -45,23 +44,17 @@ a:hover {
 
 .superNav {
      background-color: #FFFDFA;
-height: auto;
-width: auto;
+     height: auto;
+    width: auto;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    
+    background-position: center;    
     box-shadow: 0 2px 20px grey;
     border-radius: 0.2rem ;   
 }
 
 .birrita {
     font-size: 22px;
-    color: #efb810;
-   
-  
-   
-   
-    
+    color: #efb810;    
 }
 

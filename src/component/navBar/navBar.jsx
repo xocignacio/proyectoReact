@@ -1,11 +1,8 @@
-
 import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import    './navBar.css'
-
-
-import { FaShoppingCart, FaBeer} from "react-icons/fa"
+import { FaBeer} from "react-icons/fa"
 import { NavLink } from "react-router-dom"
 import Widget from "../Cart/Widget"
 import ReactLogo from "./ReactLogo"

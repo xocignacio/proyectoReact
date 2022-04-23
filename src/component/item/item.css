@@ -24,8 +24,6 @@ a {
     
 }
 
-
-
 .image {
     height: 22rem;
     background-size: cover;
@@ -38,8 +36,7 @@ a {
 .title {
     
     padding: 1rem ;
-    text-align: center;
-    
+    text-align: center;    
     color: red;
 }
 
@@ -60,8 +57,6 @@ a {
     justify-content: center;
     padding: 14px;
 }
-
-
 
 .card:hover {
     box-shadow: 5px 10px 20px 10px rgba(250, 247, 247, 0.27);
@@ -86,45 +81,3 @@ a {
     margin: 18px;
     font-family: 'Graduate', cursive;
 }
-
-
-/* .card-header {
-    font-size: 25px;
-    text-align: center;
-    background-color: black;
-    
-}
-
-.card {
-    
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-
-    
-} 
-
-
-.card-body {
-    background: white ; 
-    text-align: center;
-    font-size: 40px;
-   
-    width: 100%;
-    object-fit: cover;
-
-}
-
-a {
-    text-decoration: none;
-}
-
-.price {
-    color: #1e41b3;
-    text-align: center;
-    font-size: 30px;
-}
-
-
-
- */

@@ -5,10 +5,16 @@ import  './contacto.css'
 function Contacto() {
   return (
     <Container className='contacto' fluid>
-    <Row>
-      <Col>1 of 1</Col>
-      <Col>2 </Col>
-      <Col className='correo'>3</Col>
+    <Row  className='col-conocenos'>
+      <Col>
+         <h2 className='texto-conocenos'> Comunicate con nosotros </h2>
+         <h2 className='texto-conocenos'> 11 66419166  </h2>
+         <h2 className='texto-conocenos'> xose_ignacio@hotmail.com </h2>
+           <h2 className='texto-trabajo'>
+             En estos momentos estamos trabajando para que puedas encontrar nuestros productos en tu barrio
+           </h2>
+      </Col>
+      <Col></Col>
     </Row>
   </Container>
   )

@@ -9,7 +9,7 @@ function CartContextProvider({children}) {
    
     function  addToCart (items) {
       
-      const indice=cartList.findIndex(i => i.id === items.id) // 0,1,2
+      const indice=cartList.findIndex(i => i.id === items.id) 
     
       if (indice > -1){
           const qtyVieja=cartList[indice].cantidad
@@ -26,24 +26,22 @@ function CartContextProvider({children}) {
          setCartList([...cartList, items])
       }
  }
-
     
-   const vaciarCart= () => {
-    setCartList ([])
-   }   
-  
+    const vaciarCart= () => {
+     setCartList ([])
+   }     
 
-const precioTotal =() =>{
- return cartList.reduce((acum, prod) => acum + (prod.cantidad * prod.precio) , 0) 
-}
+    const precioTotal =() =>{
+    return cartList.reduce((acum, prod) => acum + (prod.cantidad * prod.precio) , 0) 
+    }
 
-const borrarItem = (id) => {
-   setCartList( cartList.filter(prod => prod.id !== id) )
-}
+    const borrarItem = (id) => {
+      setCartList( cartList.filter(prod => prod.id !== id) )
+    }
 
-const cantidadTotalItem = () => {
-  return cartList.reduce((acum, prod) => acum += prod.cantidad , 0) 
-}
+    const cantidadTotalItem = () => {
+      return cartList.reduce((acum, prod) => acum += prod.cantidad , 0) 
+    }
     
     return (
   <CartContext.Provider value={{

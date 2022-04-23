@@ -3,7 +3,6 @@ import { Card, Col, Container, Figure, Row } from 'react-bootstrap'
 import { Link, useParams } from 'react-router-dom'
 import { CartContext } from '../CartContext'
 import ItemCount from '../itemCount/ItemCount'
-import { GrLocation } from "react-icons/fa"
 import { IoIosPin } from "react-icons/io";
 import    './itemDetail.css'       //////////////cart de detalles
              
@@ -19,9 +18,7 @@ const onAdd = (cantidad) => {
  setIsCant (true)
 }  
 
-  return (
-     
-  
+  return (     
   
   <Container fluid className='papaContenedor'>   
      <Row className='Contenedor'>                    
@@ -43,33 +40,26 @@ const onAdd = (cantidad) => {
                  </Figure.Caption>
                  </Col>
              
-               <Col className='counter'>    
-                                                
-
-            {isCant ?
-            <center>
-            <div> 
-               <Link to='/'>
-                 <button className='btn'> Seguir comprando</button>
-               </Link>
-                <hr />
-               <Link to='/cart'>
-                  <button className='btn btn-outline-success'> Ir al carrito </button>
-              </Link>
-           </div> 
-           </center>
-           :
-            <center>  <ItemCount initial={1} stock={10} onAdd={onAdd} /> </center>            
-           
-           }
+               <Col className='counter'>                                                        
+                  {isCant ?
+                  <center>
+                  <div> 
+                    <Link to='/'>
+                      <button className='btn'> Seguir comprando</button>
+                    </Link>
+                      <hr />
+                    <Link to='/cart'>
+                        <button className='btn btn-outline-success'> Ir al carrito </button>
+                    </Link>
+                </div> 
+                </center>
+                :
+                  <center>  <ItemCount initial={1} stock={10} onAdd={onAdd} /> </center>          
                 
-                      
-  
-           
-           
-                 </Col>
-  </Row>
- </Container>
+                }                  
+              </Col>
+     </Row>
+   </Container>
      
     )
   }

@@ -1,20 +1,16 @@
 import { useState, useEffect } from "react"
 import ItemList from "../component/itemList/ItemList";
-import { productos } from "../helpers/getFetch";
 import { useParams } from "react-router-dom";
 import    './itemListContainer.css'
-import ItemCount from "../component/itemCount/ItemCount";
-/* import ItemCount from "../component/itemCount/ItemCount"; */
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
-import {collection, doc, getDocs, getFirestore} from 'firebase/firestore'   /////importo libreria de firestore
+import {collection, getDocs, getFirestore} from 'firebase/firestore'   /////importo libreria de firestore
 
 function ItemListContiner() {
     
     const [ loading, setLoading ] = useState(true)  
     const [prods, setProds ] = useState([])  
-    const { id } = useParams()                        /// el producto lo guardo y lo hago persistente en un estado. se ejecuta una sola vez (buen rendimiento)
-   
-    
+    const { id } = useParams()                       /// el producto lo guardo y lo hago persistente en un estado. se ejecuta una sola vez (buen rendimiento)
+       
    useEffect (() => {
        const db =getFirestore () ////inicializa getFirestore con mis apis key
 
@@ -22,39 +18,9 @@ function ItemListContiner() {
        getDocs(queryCollection)
        .then(resp => setProds( resp.docs.map(producto =>( {id: producto.id, ...producto.data()}) ) ) )
         .catch(err => console.log(err))
-        .finally(()=> setLoading(false))   
-
-       
-   }, [id])
-    
+        .finally(()=> setLoading(false))          
+   }, [id]) 
   
-/* 
-    useEffect(()=> {
-        const getFetch = new Promise((resolve, reject)=>{
-    
-            let condition = true
-            if (condition) {
-                setTimeout(() => {
-                    resolve(productos)                    
-                }, 2000);
-            } else {
-                reject('400 - not found')        
-            }
-        })
-        if (id) {
-            getFetch     
-            .then(resp => setProds(resp.filter(prod=> prod.categoria === id)))
-            .catch(err => console.log(err))
-            .finally(()=> setLoading(false))           
-        } else {
-            getFetch      
-            .then(resp => setProds(resp))
-            .catch(err => console.log(err))
-            .finally(()=> setLoading(false))            
-        }
-    }, [id]) */
-
-     
 
     console.log(prods)
     return (
@@ -63,7 +29,7 @@ function ItemListContiner() {
 
          :  
           <> 
-        {/*  <div className="baner"> <h2>  </h2> </div> */}
+       
            <div className="fondito ">   
               <h2> Conoce nuestros productos </h2>
               <h3 className="textoCerveza" > <IoCheckmarkCircleOutline /> Cerveza artesanal de calidad</h3>

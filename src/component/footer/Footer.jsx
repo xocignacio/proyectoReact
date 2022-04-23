@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import './footer.css'
-import { FaLinkedin, FaBeer } from "react-icons/fa"
+import { FaLinkedin} from "react-icons/fa"
 import { NavLink } from "react-router-dom"
 import ReactLogo from '../navBar/ReactLogo'
 
@@ -13,8 +13,9 @@ function Footer() {
     <Container fluid >
       <Row>       
         <Col> 
-            <p className='info'>  BeerScript es mi primer proyecto creado en ReactJs</p>   
-            <p className='info' >basado en un e-commerce de cerveza artesanal   </p>
+            <p className='info'>  Telefono: 11 66419166</p>   
+            <p className='info' > email: xose_ignacio@hotmail.com  </p>
+            <p className='info' > Buenos Aires Argentina </p>
          </Col>
         
         <Col> 

@@ -1,14 +1,13 @@
 import React, { useContext } from 'react'
 import { FaShoppingCart} from "react-icons/fa"
-import { Badge, Button, Container } from 'react-bootstrap'
+import { Badge, Button} from 'react-bootstrap'
 import { CartContext } from '../CartContext'
 
-
 function Widget( ) {
-    const {cartList } = useContext (CartContext)
+   const {cartList } = useContext (CartContext)
     
-const cantidadTotalItem = () => {
-  return cartList.reduce((acum, prod) => acum += prod.cantidad , 0) 
+   const cantidadTotalItem = () => {
+    return cartList.reduce((acum, prod) => acum += prod.cantidad , 0) 
 }
     return (
       

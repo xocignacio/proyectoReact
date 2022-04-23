@@ -3,23 +3,26 @@
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;  
-    color: whitesmoke;
-    height: 800px;
+    color: whitesmoke;              
     background-image:url(../multimedia/correo.jpg);
     padding: 15px;  
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    height: 900px;
 }
 
-.correo {
-    border: 5px solid red;
+.texto-conocenos {
+    color: white;
+    margin: 45px;
+    padding: 10px;
+    
+}
+
+.col-conocenos {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    width: 800px;
-    height: 300px;
-    margin: 20px;
-    padding: 50px;
+    
 }
+
 

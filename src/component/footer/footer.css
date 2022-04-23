@@ -1,11 +1,9 @@
-.footer {
-  
+.footer {  
     height: auto;
     width: 100%;
     color: #010203;
     /* background: linear-gradient(to left, #000000, #434343); */
-    background: #DCDCDC;
-    
+    background: #DCDCDC;    
     box-shadow: 0 2px 20px grey;
     border-radius: 0.2rem ;
    
@@ -35,7 +33,6 @@
 margin: 8px;
 padding: 0 10px;
 font-size: 30px;
-
 transition: .2s;
 }
 
@@ -84,11 +81,8 @@ ul li .linkedin:hover {
   font-size: 15px; 
   text-align: center;
   border: none !important;
-  margin: 15px;
-   
+  margin: 15px;   
 }
-
-
 .btn-footer {
   
   padding: 2px;
@@ -102,15 +96,14 @@ ul li .linkedin:hover {
 }
 
 .home2 {
-   padding: 2px;
+  padding: 2px;
   display: flex;  
   border: none;
   margin: 15px;
   color: #010203;
   font-size: 30px;
   align-items: center;
-  justify-content: center;
- 
+  justify-content: center; 
   font-family: 'Monoton', cursive;
 }
    

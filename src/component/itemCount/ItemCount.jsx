@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import { Card, Col, Container, Row } from 'react-bootstrap'
+import {Col, Container, Row } from 'react-bootstrap'
 import './itemCount.css'
 
 function ItemCount({stock, initial, onAdd}) {
@@ -44,10 +44,3 @@ function ItemCount({stock, initial, onAdd}) {
 export default ItemCount
  
 
-/* 
-
-<button className='btn' onClick={resta}> - </button>
-<label className='label'> {count} </label>
-<button className='btn' onClick={suma}> + </button>
-
-<button className='btn' onClick={agregar}> Agregar</button>  */

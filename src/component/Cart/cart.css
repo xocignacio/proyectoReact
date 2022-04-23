@@ -46,11 +46,10 @@
   }
 
 .containerPapi {
-    background-color: white;  
-    
+    background-color: white;      
     align-items: center;
     justify-content: center;
-    height:900px;
+    height:1800px;
 }
 
 .containerHijo {
@@ -60,7 +59,6 @@
     justify-content: center;
     display: block;
 }
-
 
 .col1 {
     display: flex;
@@ -108,4 +106,39 @@
     justify-content: center;
     margin: 15px;
     padding: 15px;
+    
+}
+
+.boton-borrar {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 85px;
+    border-radius: 5px;
+    background-color: rgb(225, 100, 100);
+    border: 1px solid white;
+}
+
+
+.boton-borrar:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+    background-color: rgb(254, 5, 5);
+}
+
+.boton-orden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 45px;
+}
+
+.boton-orden:hover {
+    background-color:green;
+    color: white;
+}
+
+.separador {
+    margin: 15px;
 }

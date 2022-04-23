@@ -3,13 +3,10 @@ import { useContext } from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../CartContext'
-import Item from '../item/Item'
 import    './cart.css'
-import { IoIosPin } from "react-icons/io";
-
 
 function Cart() {
-
+  
  const {cartList, vaciarCart, precioTotal,  borrarItem } = useContext (CartContext) //// cartList array de los productos seleccionados
       
       const generarOrden = (e) => {
@@ -33,39 +30,34 @@ function Cart() {
           .then (({id}) => alert ( 'su identificacion de compra es' + ' ' + id))
         
       }
-      
-   
+         
     return (
      
     <Container fluid className='containerPapi'> 
      { cartList.map (prod =>  <p key={prod.id}>
       <Row className='rowRow'>    
-        <Col className='col1'>   <Card.Img className='imagenCart' variant="top" src= {prod.foto}  /> </Col>
-        <Col className='col2'>    <div className="titleTitle">  {prod.name} | {prod.price} | Cantidad: {prod.cantidad} </div>   </Col>
-       
-                      
-        {/* <h2> {precioTotal} </h2> */}
-            
-     
-              <Col>   
-              <div className='counter'>        
-              
-              <button onClick={ generarOrden}> generando orden </button>
-              <button onClick={borrarItem} >  eliminar </button>   
-               <h2 className='title'>  {precioTotal()}  </h2>                
-              </div>        
-              </Col>            
-      </Row>
-      
-      
-      </p> )}
-      <Row >
-      <Col></Col>
-      <Col className='colBotones'> <Link to='/'>  <button> Seguir comprando</button>  </Link>   
-      
-       <button onClick={vaciarCart} > Vaciar el carrito </button>  
-      </Col> 
-      <Col></Col>
+        <Col className='col1'>  
+         <Card.Img className='imagenCart' variant="top" src= {prod.foto}  /> 
+        </Col>
+        <Col className='col2'>    
+          <div className="titleTitle">  {prod.name} | {prod.price} | Cantidad: {prod.cantidad} </div> 
+          <button className='boton-borrar' onClick={borrarItem} >  x </button>  
+        </Col>
+        <Col>   
+           <div className='counter'>                     
+             <button className='boton-orden' onClick={ generarOrden}> Generar orden de compra </button>            
+           </div>        
+        </Col>            
+      </Row>     
+     </p> )}
+       <Row >
+        <Col></Col>
+        <Col className='colBotones'> 
+          <Link to='/'>  <button> Seguir comprando</button>  </Link>         
+          <div className='separador'></div>
+          <button onClick={vaciarCart} > Vaciar el carrito </button>  
+        </Col> 
+        <Col></Col>
       </Row>
      </Container>
    
@@ -75,13 +67,3 @@ function Cart() {
 export default Cart
   
 
-
-/* 
-{ cartList.map (prod => 
-  <h2 key={prod.id}>
-    
-    <h2> Producto: {prod.name} {prod.price}  {prod.cantidad}   </h2>  
-    <h2>  precio: {prod.price}  </h2>    
-    <h2> cantidad: {prod.cantidad}   </h2>          
-    <h2> {precioTotal} </h2>              
- </h2>  )}   */
