@@ -27,7 +27,7 @@ BeerScript es un proyecto al cual le dedique muchas horas, cariño y dedicacion.
 ## Instalacion
 
 Primero necesitamos tener instalado [Node.js](https://nodejs.org/) para instalar y gestionar dependencias
-version 16.15.0 LTS
+- version 16.15.0 LTS
 
 
 
