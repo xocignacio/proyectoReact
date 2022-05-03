@@ -11,7 +11,7 @@ BeerScript es mi primer SPA realizada en ReactJs basada en un ecommerce de cerve
 - Utiliza hooks (useState, useEffect, useContext y useParams from eact-router-dom)
 -   Maquetado responsive con React Bootstrap
 -   Se aplicaron varios metodos de rendering
--   Utiliza fireBase: firestore Database para gentionar los productos y generar ordenes de compra y el Store de imagenes
+-   Utiliza fireBase: firestore Database para gentionar los productos y generar ordenes de compra (collection, getDocs, getFirestore) y el Store de imagenes
 ## Componentes
 
 - La interfaz de usuario esta separada por diferentes componentes para ser reutilizables, de facil mantenimiento y con potencial de escalabilidad 
