@@ -39,10 +39,11 @@ npx create-react "nombre del proyecto"
 Dependencias y librerias
 
 ```sh
-npm install react-router-dom  ===> Con react router dom podemos construir el Routing de la pagina de morma dinamica
-npm install firebase  ===> Utilizo firestore Database para gentionar los productos y generar ordenes de compra y el Store de imagenes para mejorar el rendimientonpm npm install react-icons --save   ===> React icons me proporciona los iconos ideales para mejorar la visibilidad de items
+npm install react-router-dom  ===> Con react router dom podemos construir el Routing de la pagina de forma ordenada y dinamica (BrowserRouter,Routes,Route y Link)
+npm install firebase  ===> Utilizo firestore Database para gentionar los productos y generar ordenes de compra y el Store de imagenes para mejorar el rendimientonpm npm install react-icons --save   ===> React icons me proporciona los iconos ideales para mejorar la visibilidad de items. Utiliza importaciones de ES6
 
 ```
 ## Framework
--  [React-Bootstrap](https://react-bootstrap.github.io/) ==> Uno de los mejores framework y mas populares para react, lo utilizo en toda la pagina, para construir un layout ordenado y generar componentes responsive como el navBar o footer
+-  [React-Bootstrap](https://react-bootstrap.github.io/) ==> Uno de los mejores framework y mas populares para react, lo utilizo en toda la pagina, para construir un layout ordenado y generar componentes responsive como el navBar o footer.
+-  Current version: 2.3.1
 
