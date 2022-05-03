@@ -33,7 +33,7 @@ function ItemCount({stock, initial, onAdd}) {
                 <h1 className='numero'> {count}    </h1> 
                 <button className='btnCuentas' onClick={suma}> + </button>                    
             </div>
-                <button className='btn' onClick={agregar}> Agregar</button> 
+                <button className='btn btn-outline-success' onClick={agregar}> Agregar</button> 
           </Col>               
         </Row>
     </Container>

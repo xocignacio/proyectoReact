@@ -1,19 +1,21 @@
 import { addDoc, collection, getFirestore } from 'firebase/firestore'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../CartContext'
 import    './cart.css'
+import { FaBeer} from "react-icons/fa"
 
 function Cart() {
-  
+ const [dataForm, setDataForm] = useState({email: '', name: '', phone: ''})
  const {cartList, vaciarCart, precioTotal,  borrarItem } = useContext (CartContext) //// cartList array de los productos seleccionados
-      
+ const [carro, setcarro] = useState (false)  
+        
       const generarOrden = (e) => {
         e.preventDefault();
         let orden = {}
       
-        orden.buyer = {name: 'ignacio' , email: 'xose_ignacio@hotmail.com' , phone: '1234566789'}
+        orden.buyer = dataForm
         orden.total = precioTotal ()
 
         orden.Item = cartList.map (cartItem => {
@@ -27,12 +29,19 @@ function Cart() {
           const db = getFirestore()                                  //////creo ordenes en la base de firebase
           const queryCollection = collection (db, 'ordenes')
           addDoc ( queryCollection, orden)
-          .then (({id}) => alert ( 'su identificacion de compra es' + ' ' + id))
+          .then (({id}) => alert ( 'Muchas gracias por confiar en nosotros, Su identificacion de compra es' + ' ' + id))
         
       }
+
+      const handleChange = (e) => {
+        setDataForm( {
+          ...dataForm,
+          [e.target.name]: e.target.value
+      } )
+    }      
          
     return (
-     
+    
     <Container fluid className='containerPapi'> 
      { cartList.map (prod =>  <p key={prod.id}>
       <Row className='rowRow'>    
@@ -40,24 +49,33 @@ function Cart() {
          <Card.Img className='imagenCart' variant="top" src= {prod.foto}  /> 
         </Col>
         <Col className='col2'>    
-          <div className="titleTitle">  {prod.name} | {prod.price} | Cantidad: {prod.cantidad} </div> 
-          <button className='boton-borrar' onClick={borrarItem} >  x </button>  
+          <div className="titleTitle"> <FaBeer />  {prod.name} | ${prod.price} | Cantidad: {prod.cantidad} </div> 
+         
         </Col>
-        <Col>   
-           <div className='counter'>                     
-             <button className='boton-orden' onClick={ generarOrden}> Generar orden de compra </button>            
-           </div>        
+        <Col className='col2'>   
+        <button className='boton-borrar' onClick={()=>{borrarItem(prod.id)}} >  x </button>  
         </Col>            
       </Row>     
      </p> )}
+      
+       <Row>
+       <Col></Col>
+       
+     <Col>       
+              
+     </Col>
+
+       <Col></Col>
+       </Row>      
+      
        <Row >
         <Col></Col>
         <Col className='colBotones'> 
-          <Link to='/'>  <button> Seguir comprando</button>  </Link>         
+          <Link to='/'>  <button  className='boton-extra' > Seguir comprando</button>  </Link>         
           <div className='separador'></div>
-          <button onClick={vaciarCart} > Vaciar el carrito </button>  
+          <button  className='boton-extra'  onClick={vaciarCart} > Vaciar el carrito </button>  
         </Col> 
-        <Col></Col>
+        <Col>   <Link to='/finalizacion'>  <button className='boton-orden'> Total: ${precioTotal()} | Comprar ahora </button>  </Link>        </Col>
       </Row>
      </Container>
    

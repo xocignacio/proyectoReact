@@ -16,7 +16,7 @@ function Item({prod}) {
  {prod.descripcion} 
    
  </Card.Text>
- <center>  <button className="btn-detalle" > Ir a detalles </button> </center>
+ <center>  <button className="btn-detalle btn-outline-warning" > Ir a detalles </button> </center>
 
 </Card.Body>
 </Card>

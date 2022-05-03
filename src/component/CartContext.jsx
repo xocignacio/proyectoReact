@@ -32,7 +32,7 @@ function CartContextProvider({children}) {
    }     
 
     const precioTotal =() =>{
-    return cartList.reduce((acum, prod) => acum + (prod.cantidad * prod.precio) , 0) 
+    return cartList.reduce((acum, prod) => acum + (prod.cantidad * prod.price) , 0) 
     }
 
     const borrarItem = (id) => {

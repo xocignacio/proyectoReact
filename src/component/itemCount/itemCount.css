@@ -1,5 +1,3 @@
-
-
 button {
    /*  background: linear-gradient(-45deg,rgb(50, 49, 49), black,#634a00, #efb810); */
     background-size: 800% 400%;
@@ -52,20 +50,6 @@ button {
     justify-content: center;
 }
 
-/* 
-.count {
-font-family: Montserrat, sans-serif;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 2rem;
-height: 100vh;
-}
-
- */
-
-
 .numero {
     color: black;
     font-size: 3rem;
@@ -96,11 +80,6 @@ height: 100vh;
     margin: 25px;
 }
 
-
-/* .label {
-    color: black;
-    font-size: 25px;
-} */
 
 .cuadrado {
     border: 1px solid red;

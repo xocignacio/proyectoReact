@@ -45,7 +45,7 @@ const onAdd = (cantidad) => {
                   <center>
                   <div> 
                     <Link to='/'>
-                      <button className='btn'> Seguir comprando</button>
+                      <button className='btn  btn-outline-warning'> Seguir comprando</button>
                     </Link>
                       <hr />
                     <Link to='/cart'>

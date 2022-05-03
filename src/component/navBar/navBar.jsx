@@ -20,6 +20,7 @@ function NavBar() {
     <Nav className="me-auto">
       <NavLink to='conocenos' className={"conocer"}>CONOCENOS</NavLink>
       <NavLink to="/" className={"lista"}><FaBeer  className="birrita" /> PRODUCTOS <FaBeer className="birrita" />  </NavLink>
+      
       <NavLink to='contacto' className={"cont"} >CONTACTO</NavLink>
     </Nav>
     <Nav>

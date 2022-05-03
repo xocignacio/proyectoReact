@@ -10,6 +10,18 @@ a:hover {
    padding: 5px;
 }
 
+
+.lista :hover a {
+    filter: blur(2px);
+  }
+  
+.lista a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px black;
+    filter: none;
+}
+  
+
 .container {
     color: white;
 }
@@ -43,8 +55,8 @@ a:hover {
 
 
 .superNav {
-     background-color: #FFFDFA;
-     height: auto;
+     background-color: #fff;
+     height: 6rem;
     width: auto;
     background-size: cover;
     background-repeat: no-repeat;

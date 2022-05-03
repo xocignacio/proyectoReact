@@ -13,8 +13,7 @@ import Home from './component/home/Home';
 import CartContextProvider from './component/CartContext';
 import Footer from './component/footer/Footer';
 import Contacto from './component/contacto/Contacto';
-
-
+import CartFinalizacion from './component/Cart/CartFinalizacion';
 
 
 function App() {
@@ -32,7 +31,7 @@ function App() {
     <Route path="/*" element={<Navigate to= "/" />} />
     <Route path='/Home' element={ <Home />}/>      
     <Route path='/contacto' element={ <Contacto />}/>       
-    
+    <Route path='/finalizacion' element={ <CartFinalizacion />}/> 
     </Routes>
     <Footer/> 
     </>
