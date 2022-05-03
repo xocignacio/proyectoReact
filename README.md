@@ -3,7 +3,7 @@
 
 
 
-BeerScript es mi primer SPA realizada en ReactJs basado en un ecommerce de 8 diferentes tipos de cerveza artesanal
+BeerScript es mi primer SPA realizada en ReactJs basada en un ecommerce de cerveza artesanal pensada para ser dinamica, de facil escalabilidad
 ## DEPLOY
 https://iridescent-cranachan-e66c1d.netlify.app/
 -  [Netlify]( https://www.netlify.com/  )  | Me brinda la posibilidad de observar la SPA en funcionamiento
@@ -41,7 +41,7 @@ npx create-react "nombre del proyecto"
 Dependencias y librerias
 
 ```sh
-npm install react-router-dom  ===> Con react router dom podemos construir el Routing de la pagina de forma ordenada y dinamica (BrowserRouter,Routes,Route y Link)
+npm install react-router-dom  ===> Con react router dom podemos construir el routing en el browser, de forma ordenada y dinamica (BrowserRouter,Routes,Route y Link)
 npm install firebase  ===> Utilizo firestore Database para gentionar los productos y generar ordenes de compra y el Store de imagenes para mejorar el rendimientonpm npm install react-icons --save   ===> React icons me proporciona los iconos ideales para mejorar la visibilidad de items. Utiliza importaciones de ES6
 
 ```
