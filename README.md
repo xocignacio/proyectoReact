@@ -44,5 +44,5 @@ npm install firebase  ===> Utilizo firestore Database para gentionar los product
 
 ```
 ## Framework
--  [React-Bootstrap](https://react-bootstrap.github.io/) ==> Uno de los mejores framework para react, lo utilizo en toda la pagina, para construir un layout ordenado y generar componentes responsive 
+-  [React-Bootstrap](https://react-bootstrap.github.io/) ==> Uno de los mejores framework y mas populares para react, lo utilizo en toda la pagina, para construir un layout ordenado y generar componentes responsive como el navBar o footer
 
