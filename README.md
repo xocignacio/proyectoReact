@@ -36,10 +36,10 @@ cd "nombre de la carpeta" donde nos paramos para instalar reactJs
 npx create-react "nombre del proyecto"
 ```
 
-Dependencias
+Dependencias y librerias
 
 ```sh
-npm install react-router-dom  ===> Nos permite construir el Routing de la pagina 
+npm install react-router-dom  ===> Con react router dom podemos construir el Routing de la pagina de morma dinamica
 npm install firebase  ===> Utilizo firestore Database para gentionar los productos y generar ordenes de compra y el Store de imagenes para mejorar el rendimiento
 ```
 
