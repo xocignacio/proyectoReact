@@ -7,7 +7,7 @@ BeerScript es mi primer SPA realizada en ReactJs basada en un ecommerce de cerve
 ## DEPLOY
 ✨ https://iridescent-cranachan-e66c1d.netlify.app/ ✨
 -  [Netlify]( https://www.netlify.com/  )  | Me brinda la posibilidad de observar la SPA en funcionamiento
-
+## Conceptos
 - Utiliza hooks (useState, useEffect, useContext y useParams from eact-router-dom)
 -   Maquetado responsive con React Bootstrap
 -   Se aplicaron varios metodos de rendering
