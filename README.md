@@ -1,14 +1,17 @@
 # BeerScript
-## Eccomerce de cerveza artesanal
+## Ecommerce de cerveza artesanal
 
 
 
-BeerScript es mi primer SPA realizada en ReactJs basado en un eccomerce de 8 diferentes tipos de cerveza artesanal
-
-- Utiliza firebase
--   Maquetado responsive con React Bootstrap
--   Se aplicaron varios metodos de rendering
-- ✨Implementacion de        hooks✨
+BeerScript es mi primer SPA realizada en ReactJs basada en un ecommerce de cerveza artesanal pensada para ser dinamica, de facil escalabilidad
+## DEPLOY
+✨ https://iridescent-cranachan-e66c1d.netlify.app/ ✨
+-  [Netlify]( https://www.netlify.com/  )  | Me brinda la posibilidad de observar la SPA en funcionamiento
+## Conceptos
+- Utiliza hooks (useState, useEffect, useContext y useParams from eact-router-dom)
+-   Maquetado responsive con React Bootstrap (Current version: 2.3.1)
+-   Se aplicaron varios metodos de rendering con loading manejados con useState
+-   Utiliza fireBase: firestore Database para gentionar los productos y generar ordenes de compra (collection, getDocs, getFirestore) y el Store de imagenes
 ## Componentes
 
 - La interfaz de usuario esta separada por diferentes componentes para ser reutilizables, de facil mantenimiento y con potencial de escalabilidad 
@@ -25,6 +28,7 @@ BeerScript es un proyecto al cual le dedique muchas horas, cariño y dedicacion.
 ## Instalacion
 
 Primero necesitamos tener instalado [Node.js](https://nodejs.org/) para instalar y gestionar dependencias
+- version 16.15.0 LTS
 
 
 
@@ -34,10 +38,14 @@ cd "nombre de la carpeta" donde nos paramos para instalar reactJs
 npx create-react "nombre del proyecto"
 ```
 
-Dependencias
+Dependencias y librerias
 
 ```sh
-npm install react-router-dom  ===> Routing
-npm install firebase  ===> Bd
+npm install react-router-dom  ===> Con react router dom podemos construir el routing en el browser, de forma ordenada y dinamica (BrowserRouter,Routes,Route y Link)
+npm install firebase  ===> Utilizo firestore Database para gentionar los productos y generar ordenes de compra y el Store de imagenes para mejorar el rendimientonpm npm install react-icons --save   ===> React icons me proporciona los iconos ideales para mejorar la visibilidad de items. Utiliza importaciones de ES6
+
 ```
+## Framework
+-  [React-Bootstrap](https://react-bootstrap.github.io/) ==> Uno de los mejores framework y mas populares para react, lo utilizo en toda la pagina, para construir un layout ordenado y generar componentes responsive como el navBar o footer.
+-  Current version: 2.3.1
 
