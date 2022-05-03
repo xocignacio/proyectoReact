@@ -39,7 +39,7 @@ npx create-react "nombre del proyecto"
 Dependencias
 
 ```sh
-npm install react-router-dom  ===> Routing
-npm install firebase  ===> Bd
+npm install react-router-dom  ===> Nos permite construir el Routing de la pagina 
+npm install firebase  ===> Utilizo firestore Database para gentionar los productos y generar ordenes de compra y el Store de imagenes para mejorar el rendimiento
 ```
 
