@@ -6,7 +6,7 @@ import ItemDetail from "../../component/ItemDetail/ItemDetail"
 function ItemDetailContianer() {
     const [ loading, setLoading ] = useState(true)  
     const [producto, setProducto] = useState({})
-    const {detalleId} = useParams()
+    const {detalleId} = useParams() //// Tomo el parametro de mi ruta con el hook useParams
     console.log (detalleId)
     
     

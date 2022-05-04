@@ -15,7 +15,7 @@ function Widget( ) {
       
         <Badge className='badge'>   {/*  { cartList.map (prod => 
           
-        <li key={prod.id}>  */} <h6 className='cantidadDelCarro'> + {cantidadTotalItem()}    </h6> {/*  </li>  ) } */}
+        <li key={prod.id}>  */} <h6 className='cantidadDelCarro'>  {cantidadTotalItem()}    </h6> {/*  </li>  ) } */}
         
          </Badge>
               

@@ -24,8 +24,11 @@ function App() {
      <>
     <NavBar />    
     <Routes> 
-    <Route path='/' element={<ItemListContiner />} />
+    <Route path= "/" element={<Home />} />
+    <Route path='/categoria/:id' element={<ItemListContiner />} />
     <Route path='/detalle/:detalleId' element={< ItemDetailContianer />} />
+    <Route path='/categoria/:detalleId' element={< ItemDetailContianer />} />
+
     <Route path='/cart' element={ <Cart />}/>
     <Route path='/conocenos' element={ <Conocenos />}/>
     <Route path="/*" element={<Navigate to= "/" />} />
@@ -45,7 +48,3 @@ function App() {
 
 export default App; 
   
-/* import logo from './logo.svg'; */
-/* 
-<Main Bienvenida='Bienvenidos a BeerScript'/>
-<ItemCount stock= {5} initial= {1} /> */

@@ -18,10 +18,10 @@ function NavBar() {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-      <NavLink to='conocenos' className={"conocer"}>CONOCENOS</NavLink>
-      <NavLink to="/" className={"lista"}><FaBeer  className="birrita" /> PRODUCTOS <FaBeer className="birrita" />  </NavLink>
-      
-      <NavLink to='contacto' className={"cont"} >CONTACTO</NavLink>
+      <NavLink to='conocenos' className={"conocer"}>Conocenos </NavLink>
+      <NavLink to="categoria/Artesanal" className={"lista"}><FaBeer  className="birrita" /> Cerveza Artesanal   </NavLink>
+      <NavLink to= "categoria/Industrial" className={"lista"}><FaBeer  className="birrita" /> Cerveza industrial  </NavLink>
+      <NavLink to='contacto' className={"cont"} >Contacto</NavLink>
     </Nav>
     <Nav>
    

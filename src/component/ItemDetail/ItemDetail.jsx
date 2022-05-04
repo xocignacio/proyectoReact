@@ -10,7 +10,7 @@ function ItemDetail({producto}) {
 const [isCant, setIsCant] = useState (false)  
 const {addToCart} = useContext (CartContext) 
 const {detalleId} = useParams()
-console.log (detalleId)
+
 
 const onAdd = (cantidad) => {
  console.log (cantidad)
@@ -44,7 +44,7 @@ const onAdd = (cantidad) => {
                   {isCant ?
                   <center>
                   <div> 
-                    <Link to='/'>
+                    <Link to='/categoria/Artesanal'>
                       <button className='btn  btn-outline-warning'> Seguir comprando</button>
                     </Link>
                       <hr />

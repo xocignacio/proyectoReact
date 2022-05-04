@@ -38,9 +38,10 @@ function CartFinalizacion() {
           ...dataForm,
           [e.target.name]: e.target.value
       } )
-    }
-          
-         
+    } 
+  
+        
+        
     return (
      
      <Container className='fondoFinalizacion' fluid>
@@ -50,12 +51,10 @@ function CartFinalizacion() {
          <h2>Ya casi tenes tu cerveza artesanal, completa el formulario para finalizar y genera una orden de compra</h2> </Col>
      </Row>
 
-       <Row>
-       <Col></Col>
-
-     <Col>      
-          
-     <form 
+     <Row>
+      <Col></Col>
+      <Col>                
+          <form 
                 className='mt-5'
                 onSubmit={generarOrden}                 
             >
@@ -80,32 +79,21 @@ function CartFinalizacion() {
                     placeholder='Email' 
                     value={dataForm.email}
                     onChange={handleChange}
-                />
-                
-                {/* <input 
-                    type='email' 
-                    name='email1'
-                    placeholder='repita email' 
-                    value={dataForm.email}
-                    onChange={handleChange}
-                /> */}
-
+                />                
+               
                { cartList.map (prod =>  <p key={prod.id}> 
                 <p className='carritoFinal'>  <li> {prod.cantidad}  {prod.name} <FaBeer />  <CloseButton className='btn-borrar' onClick={()=>{borrarItem(prod.id)}}/>   </li> </p>  </p> )}
                 <p className='precioTotal'>Total: ${precioTotal()}</p>
                 <Card.Text className="textVendedor">  Se retira en direccion del vendedor  </Card.Text>
                         <p> <IoIosPin />  Villa Adelina - San Isidro</p>
-                        <Link to='/'>  <button  className='boton-extra' > Seguir comprando</button>  </Link>     
+                        <Link to='/categoria/Artesanal'>  <button  className='boton-extra' > Seguir comprando</button>  </Link>     
                 <button className='boton-orden' onClick={ generarOrden}> Generar orden de compra </button>   
             </form>
      
      </Col>
 
-       <Col> 
-       
-       </Col>
-       </Row>
-      
+        <Col></Col>
+       </Row>     
       
      </Container>
    
@@ -115,3 +103,33 @@ function CartFinalizacion() {
 export default CartFinalizacion
   
 
+/* 
+form.addEventListener("submit", e=> {
+  e.preventDefault()
+  let warnings = ""
+  let entrarEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+  let entrar = false
+  parrafo.innerHTML = ""
+ 
+  if(nombre.value.length <2) {
+  warnings += `  el nombre no es valido <div></div>`
+  entrar = true
+  }
+  
+  if(!entrarEmail.test(email.value)){
+    warnings += `el email no es valido <div></div>`
+    entrar = true
+  }
+  if(password.value.length <4) {
+    warnings += `la contraseña no es valida<div></div>`
+    entrar = true
+  }
+
+  if(entrar) {
+    parrafo.innerHTML = warnings
+  }
+  else {
+    alert('Muchas gracias, ya sos parte de coffeeCLUB') 
+    
+    }
+}) */
