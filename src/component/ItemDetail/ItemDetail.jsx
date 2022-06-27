@@ -20,8 +20,8 @@ const onAdd = (cantidad) => {
 
   return (     
   
-  <Container fluid className='papaContenedor'>   
-     <Row className='Contenedor'>                    
+  <Container fluid className='mt-10'>   
+     <Row className='mt-10 mb-10 Contenedor'>                    
          
                  <Col>
                  <div className='imagen'>

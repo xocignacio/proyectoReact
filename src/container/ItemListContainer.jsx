@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import    './itemListContainer.css'
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import {collection, getDocs, getFirestore, query, where} from 'firebase/firestore'   /////importo libreria de firestore
+import { Col, Container, Row } from "react-bootstrap";
+import Carrusel from "../component/carrusel/Carrusel";
 
 function ItemListContiner() {
     
@@ -18,8 +20,8 @@ function ItemListContiner() {
        ? 
            collection(db, 'items' )
        :  
-           query( collection(db, 'Items' ), 
-               where('categoria','==', id) 
+           query( collection(db, 'Items' ),   //// 2 parametros (1 db de base de datos, 2` el nombre que le di al array en firebase)
+               where('categoria','==', id)  ////filtro para renderizar segun la categoria (la categoria se la doy en la db de firebase)
                                                
            )                             
 
@@ -33,19 +35,31 @@ function ItemListContiner() {
     
     return (
         <>      
+      
+                 
         {  loading ? <div class="glitch" data-text="Cargando...">Cargando...</div>  //// el loading esta en true y me muestra cargando, termina y dispara el useEffect, (linea 14) me trae los productos y se ejecuta el loading en falso  (linea 16) y cambia el estado.
 
          :  
-          <>        
-           <div className="fondito ">   
+          <>       
+            
+           <Carrusel />           
+            <Container fluid  className="fondito "> 
+              <Row>   
+             <Col>   
+              
+              
               <h2> Conoce nuestros productos </h2>
               <h3 className="textoCerveza" > <IoCheckmarkCircleOutline /> Tu cerveza local al alcance de un click</h3>
               
               <ItemList prods={prods} />                                           {/* ItemList tengo el mapeo y en item tengo la card  */}
-           </div>
+              </Col>
+              </Row>
+         </Container>
             </>
         }    
-
+    
+         
+          
         </>
     )
 }

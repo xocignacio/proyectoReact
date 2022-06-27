@@ -1,5 +1,5 @@
 a:hover {
-    color: #efb810;
+    color: grey;
   }
 .lista {
     color: white;
@@ -56,7 +56,7 @@ a:hover {
 
 
 .superNav {
-     background-color: black;
+     background-color: #efb810; /* #efb810; */
      height: 6rem;
     width: auto;
     background-size: cover;
@@ -71,6 +71,6 @@ a:hover {
 
 .birrita {
     font-size: 22px;
-    color: #efb810;    
+    color: white;
 }
 

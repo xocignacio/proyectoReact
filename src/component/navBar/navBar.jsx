@@ -11,7 +11,7 @@ import ReactLogo from "./ReactLogo"
 function NavBar() {
   return (
     <>
-  <Navbar className="superNav" collapseOnSelect expand="lg" >
+  <Navbar  className="superNav"  collapseOnSelect expand="lg" >
   <Container fluid>
     
   <NavLink to="home" className={"home"}> <ReactLogo /> </NavLink>

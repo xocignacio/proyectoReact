@@ -1,9 +1,10 @@
 .footer {  
-    height: auto;
+  
+  height: auto;
     width: 100%;
-    color: #010203;
+    color: white;
     /* background: linear-gradient(to left, #000000, #434343); */
-    background: white;    
+    background: #BEBEBE; 
     box-shadow: 0 2px 20px grey;
     border-radius: 0.2rem ;
    
@@ -18,7 +19,7 @@
 }
 
 .redes {
-  color: grey;
+  color: white;
   text-align: center;
 }
 
@@ -72,7 +73,7 @@ ul li .linkedin:hover {
 }
 
 .info {
-  color:  grey;
+  color:  white;
   display: flex;
   align-items: center;
   justify-content: center;
