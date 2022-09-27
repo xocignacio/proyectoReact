@@ -1,7 +1,6 @@
 # Servidores proxy con balanceo de carga 
-## Ptoyecto de servidores
 
-## Servidores
+## Rutas
 ✨[Servidor 1](http://localhost:8080/)✨
 ✨[Servidor 2](http://localhost:8081/)✨
 ## Conceptos
