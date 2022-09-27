@@ -1,10 +1,7 @@
-# BeerScript
-## Ecommerce de cerveza artesanal
+# Servidores proxy con balanceo de carga 
+## Ptoyecto de servidores
 
-
-
-BeerScript es mi primer SPA realizada en ReactJs basada en un ecommerce de cerveza artesanal pensada para ser dinamica, intuitiva y de facil escalabilidad
-## DEPLOY
+## Servidores
 ✨[Servidor 1](http://localhost:8080/)✨
 ✨[Servidor 2](http://localhost:8081/)✨
 ## Conceptos
